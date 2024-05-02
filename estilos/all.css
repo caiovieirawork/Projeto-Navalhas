@@ -23,3 +23,8 @@ body{
     height: 100vh;
     background-color: var(--darker-color);
 }
+/* header */
+
+.logo img{
+    height: 40px;
+}
