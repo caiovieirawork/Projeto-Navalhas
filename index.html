@@ -5,21 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarberShop Navalhas - Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="estilos/all.css">
 </head>
 <body>
     
 
     <header>
-        <div class="interface">
+        <div class="nav-bar">
             <a href="#">
                 <div class="logo">
                     <img src="assets/logo-navalhas.png" alt="logo da barbearia">
                 </div><!--logo-->
             </a>
 
-            <nav class="menu-desktop">
-                <ul>
+            <nav>
+                <ul class="links">
                     <a href=""><li>Início</li></a>
                     <a href=""><li>Sobre</li></a>
                     <a href=""><li>Cortes</li></a>
@@ -27,15 +29,42 @@
                 </ul>
             </nav>
 
-            <div class="btn-contato">
-                <a href="#">
-                    <button>Contato</button>
-                </a>
-            </div>
-        </div><!--interface-->
+                <a href="#" class="btn-contato">
+                    Contato
+                </a><!--btn-contato-->
+            
+            <div class="btn-menu-wrap">
+                <i class="fa-solid fa-bars"></i>
+            </div><!--btn-menu-wrap-->
+
+        </div><!--nav-bar-->
+
+        <div class="drop-down-menu">
+
+            <a href=""><li>Início</li></a>
+            <a href=""><li>Sobre</li></a>
+            <a href=""><li>Cortes</li></a>
+            <a href=""><li>Avaliações</li></a>
+
+            <a href="#" class="btn-contato">Contato</a>
+
+        </div><!--drop-down-menu-->
     </header>
 
-    
+    <script>
+        const btnMenuWrap = document.querySelector('.btn-menu-wrap')
+        const btnMenuWrap_icon = document.querySelector('.btn-menu-wrap i')
+        const dropDownMenu = document.querySelector('.drop-down-menu')
+
+        btnMenuWrap.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            btnMenuWrap_icon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
 
 </body>
 </html>
