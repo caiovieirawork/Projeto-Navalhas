@@ -104,44 +104,10 @@ ul.links a:active {
     cursor: pointer;
     display: none;
 }
-/*Menu Mobile*/
-
-.drop-down-menu{
-    position: absolute;
-    right: 2rem;
-    top: 80px;
-    height: 0px;
-    width: 300px;
-    background-color: rgba(106, 15, 73, 0.77);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
-    display: none;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.drop-down-menu.open{
-    height: 272px;
-}
-
-.drop-down-menu li{
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.drop-down-menu a.btn-contato{
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
+/*Main*/
 main{
-    height: 90vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 main img#ilogop{
     width: 55%;
@@ -153,9 +119,10 @@ main img#ilogop{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+/*Sobre*/
 section#isobre{
-    margin-top: 500px;
+    width: 100%;
+    margin-top: 450px;
     display: flex;
 }
 
@@ -192,6 +159,39 @@ section#isobre .txtright p{
     font-size: 20px;
 }
 
+/*Menu Mobile*/
+
+.drop-down-menu{
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    height: 0px;
+    width: 300px;
+    background-color: rgba(106, 15, 73, 0.77);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.drop-down-menu.open{
+    height: 272px;
+}
+
+.drop-down-menu li{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-down-menu a.btn-contato{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*DESIGN RESPONSIVO*/
 @media (max-width: 880px){
     .nav-bar ul.links, .nav-bar a.btn-contato{
