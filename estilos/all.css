@@ -145,10 +145,51 @@ main{
 }
 main img#ilogop{
     width: 55%;
+}
+
+.aligncenter{
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+section#isobre{
+    margin-top: 500px;
+    display: flex;
+}
+
+.imgleft{
+    width: 80%;
+    height: 600px;
+}
+
+.txtright{
+    width: 100%;
+    height: 600px;
+}
+
+section#isobre .imgleft img{
+    width: 80%;
+}
+section#isobre .txtright h1{
+    color: white;
+    display: block;
+    text-align: left;
+    font-size: 1.9em;
+}
+
+.aligncleft{
+    position: relative;
+    top: 30%;
+    justify-content: left;
+}
+section#isobre .txtright p{
+    color: white;
+    display: block;
+    text-justify: auto;
+    width: 90%;
+    font-size: 20px;
 }
 
 /*DESIGN RESPONSIVO*/
